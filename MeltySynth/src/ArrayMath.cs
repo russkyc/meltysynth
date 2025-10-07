@@ -8,14 +8,12 @@ namespace MeltySynth
     {
         public static void MultiplyAdd(float a, float[] x, float[] destination)
         {
-            /*
             for (var i = 0; i < destination.Length; i++)
             {
                 destination[i] += a * x[i];
             }
-            */
 
-            var vx = MemoryMarshal.Cast<float, Vector<float>>(x);
+            /*var vx = MemoryMarshal.Cast<float, Vector<float>>(x);
             var vd = MemoryMarshal.Cast<float, Vector<float>>(destination);
 
             var count = 0;
@@ -29,7 +27,7 @@ namespace MeltySynth
             for (var i = count; i < destination.Length; i++)
             {
                 destination[i] += a * x[i];
-            }
+            }*/
         }
 
         public static void MultiplyAdd(float a, float step, float[] x, float[] destination)
